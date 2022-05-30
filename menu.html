@@ -5,6 +5,17 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	    <link href="estilo.css" rel="stylesheet">
+        <script>
+            function iniciarJogo(){
+                var acesso = document.getElementById('nivel').value;
+                if(!acesso){ // Pode ser escrito como:      if(acesso == "".){
+                    alert("Favor informar um nível para poder jogar")
+                }
+                else{
+                    alert(acesso)
+                }
+            }
+        </script>
 	</head>
 	<body>
 		<div class = "container">
@@ -34,7 +45,7 @@
 			<div class = "roll">
 				<div class = "col">
 					<div class = "d-flex justify-content-center">						
-						<button typ = "button" class = "btn btn-danger btn-lg">Iniciar Jogo</button>
+						<button typ = "button" class = "btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
 					</div>
 				</div>
 			</div>
