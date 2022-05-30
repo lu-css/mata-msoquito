@@ -14,9 +14,9 @@ ajustaPalco()
 var VjCronometro = setInterval(function(){
 	tempo --
 	if(tempo < 0){
-		alert('Vitória !!');
 		clearInterval(VjCronometro);
-		clearInterval(criarMosquito)
+		clearInterval(criarMosquito);
+		window.location.href = "vitoria.html"
 		
 	}
 	else{
