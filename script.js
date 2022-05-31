@@ -3,6 +3,23 @@ var largura = 0
 var vidas = 1
 var tempo = 15;
 
+var gerarTempo = 1500;
+
+var vjNivel = window.location.search.replace('?', '').toLowerCase();
+
+if(vjNivel == 'normal'){
+	// 1500
+	var gerarTempo = 1500;
+}
+else if(vjNivel == 'dificil'){
+	// 1000
+	var gerarTempo = 1000;
+}
+else if(vjNivel == "complicado"){
+	// 750
+	var gerarTempo = 750;
+}
+
 function ajustaPalco(){
     altura = window.innerHeight
     largura = window.innerWidth
